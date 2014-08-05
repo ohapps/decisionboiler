@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'web/style.css' %}" />
+    <title>django test app</title>
+</head>
+<body>
+
+    <div id="sidebar">
+        {% block sidebar %}
+        <ul>
+            <li><a href="{% url 'django.contrib.auth.views.logout_then_login' %}">logout</a></li>
+            <li><a href="/blog/">Blog</a></li>
+        </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

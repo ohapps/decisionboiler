@@ -2,14 +2,5 @@
 
 {% block content %}
 
-{% if decisions %}
-    <ul>
-    {% for decision in decisions %}
-        <li><a href="{% url 'view' decision.id %}">{{ decision.description }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No decisions are available. this is an update</p>
-{% endif %}
 
 {% endblock %}

@@ -2,24 +2,31 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'web/style.css' %}" />
-    <title>django test app</title>
-</head>
-<body>
-
-    <div id="sidebar">
-        {% block sidebar %}
-        <ul>
-            <li><a href="{% url 'django.contrib.auth.views.logout_then_login' %}">logout</a></li>
-            <li><a href="/blog/">Blog</a></li>
-        </ul>
-        {% endblock %}
-    </div>
-
-    <div id="content">
-        {% block content %}{% endblock %}
-    </div>
-
-</body>
+   <head>
+       <title>django test app</title>
+       <link rel="stylesheet" type="text/css" href="{% static 'javascript/ext-5.0.1/build/packages/ext-theme-gray/build/resources/ext-theme-gray-all.css' %}">
+       <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}" />
+       <script type="text/javascript" src="{% static 'javascript/ext-5.0.1/build/ext-all.js' %}"></script>
+       <script type="text/javascript" src="{% static 'javascript/ext-5.0.1/build/packages/ext-theme-gray/build/ext-theme-gray.js' %}"></script>
+       <script type="text/javascript" src="{% static 'app/app.js' %}"></script>
+   </head>
+   <body>
+      <div id="header">
+         <div id="logo">
+            Decision Boiler
+         </div>
+      <div id="top_nav">
+         <ul>
+           <li><a href="">account</a></li>
+           <li><a href="{% url 'django.contrib.auth.views.logout_then_login' %}">logout</a></li>
+         </ul>
+      </div>
+      </div>
+         <div id="content">
+         {% block content %}{% endblock %}
+         </div>
+      <div id="footer">
+         ohapps logo goes here
+      </div>
+   </body>
 </html>

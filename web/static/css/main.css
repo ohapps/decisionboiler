@@ -1,0 +1,37 @@
+#header {
+   
+}
+
+#logo {
+   width: 400px;
+   float: left;
+   clear: right;
+   padding: 10px;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+#top_nav {
+   width: 400px;
+   float: right;
+   clear: right;
+   text-align: right;
+   padding: 0px 5px;
+}
+
+#top_nav ul {
+   margin: 0px;
+}
+
+#top_nav ul li {
+   display: inline;
+}
+
+#content {
+
+}
+
+#footer{
+   padding: 5px;
+   text-align: right;
+}

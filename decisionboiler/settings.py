@@ -93,7 +93,7 @@ LOGIN_REDIRECT_URL = '/web/'
 # REST SETTINGS
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
-    'PAGINATE_BY': 10,
+    'PAGINATE_BY': 25,
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
